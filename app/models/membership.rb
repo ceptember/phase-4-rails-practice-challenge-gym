@@ -6,7 +6,7 @@ class Membership < ApplicationRecord
     validates :client_id, presence: true
     validates :charge, presence: true 
 
-    # a client can only have one memebership with each gym 
+    # a client can only have one membership with each gym 
 
     validate :only_one_membership 
 
